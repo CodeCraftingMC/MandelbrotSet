@@ -68,7 +68,7 @@ namespace MandelbrotSet
         {
             Enabled = false;
             PBViewer.SuspendLayout();
-            PBViewer.Image = CachedGenerate(PBViewer.Width * 8, PBViewer.Height * 8, Offset, Zoom, NUDIterations.Value);
+            PBViewer.Image = CachedGenerate(PBViewer.Width / 4, PBViewer.Height / 4, Offset, Zoom, NUDIterations.Value);
             PBViewer.ResumeLayout(true);
             Enabled = true;
         }
